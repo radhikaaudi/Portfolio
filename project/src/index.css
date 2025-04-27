@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-black text-white font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mono;
+  }
+}
+
+/* Grid background with perspective effect */
+.grid-bg {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background-image: linear-gradient(rgba(18, 18, 18, 0.9) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(18, 18, 18, 0.9) 1px, transparent 1px);
+  background-size: 30px 30px;
+  transform: perspective(1000px) rotateX(60deg);
+  transform-origin: center;
+  animation: grid-animation 20s linear infinite;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@keyframes grid-animation {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0px 1000px;
+  }
+}
+
+/* Scan line animation */
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animate-scan {
+  animation: scan 4s linear infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-bg {
+    transform: perspective(1000px) rotateX(70deg);
+  }
+}
+
+/* Neon text glow effect */
+@layer components {
+  .neon-green {
+    @apply text-[#c2ff00];
+    text-shadow: 0 0 5px rgba(194, 255, 0, 0.5), 0 0 10px rgba(194, 255, 0, 0.3);
+  }
+  
+  .neon-pink {
+    @apply text-[#ff44cc];
+    text-shadow: 0 0 5px rgba(255, 68, 204, 0.5), 0 0 10px rgba(255, 68, 204, 0.3);
+  }
+  
+  .neon-blue {
+    @apply text-[#4d4dff];
+    text-shadow: 0 0 5px rgba(77, 77, 255, 0.5), 0 0 10px rgba(77, 77, 255, 0.3);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Project card hover effects */
+@layer components {
+  .project-card-hover {
+    @apply transition-all duration-500;
+  }
+  
+  .project-card-hover:hover {
+    @apply transform scale-[1.02];
+  }
+}
