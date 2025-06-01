@@ -4,22 +4,23 @@ import ProjectCard from './ProjectCard';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "Slot Flow",
-      description: "A scheduling application for efficient time management",
-      image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      tags: ["React", "Node.js", "MongoDB", "Express"],
+      title: "SafeShe",
+      description: "An app that secures safety for the women at all the times",
+      image: "https://innovationinpolitics.eu/wp-content/uploads/2021/11/AdobeStock_390677178-scaled.jpeg",
+      tags: ["React Native", "Node.js", "MongoDB", "Express"],
       demoLink: "#",
-      codeLink: "#"
+      codeLink: "https://github.com/radhikaaudi/SheSafe"
     },
+
     {
-      title: "CryptoX",
-      description: "Digital currency exchange platform",
-      image: "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      tags: ["React", "TypeScript", "Web3.js", "Tailwind"],
+      title: "Wishlist Bot",
+      description: "A wishlist bot for an online shopping platform, allowing users to mix and match outfits from topwear, bottomwear, and footwear.",
+      image: "https://miro.medium.com/v2/resize:fit:1400/1*mNKvwKyy2RLR84DiD73iBw.png",
+      tags: ["HTML", "CSS", "JavaScript", "Flask", "Tailwind"],
       demoLink: "#",
-      codeLink: "#"
+      codeLink: "https://github.com/radhikaaudi/Myntra_HackerRamp_WeForShe"
     },
-    {
+    /*{
       title: "Rewire",
       description: "AI-powered learning management system",
       image: "https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -50,8 +51,8 @@ const Projects: React.FC = () => {
       tags: ["React", "Socket.io", "Node.js", "InfluxDB"],
       demoLink: "#",
       codeLink: "#"
-    }
-  ];
+    }*/
+  ]
 
   return (
     <section id="projects" className="py-20 bg-black relative">
@@ -69,7 +70,7 @@ const Projects: React.FC = () => {
           ))}
         </div>
         
-        <div className="flex justify-center mt-16">
+           <div className="flex justify-center mt-16">
           <a 
             href="/resume.pdf" 
             className="inline-flex items-center gap-2 bg-[#4d4dff] hover:bg-[#3a3abf] text-white font-mono py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105"

@@ -28,8 +28,8 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-[#c2ff00] font-mono text-xl font-bold">
-          Portfolio
+        <div className="text-[#c2ff00] font-mono text-3xl font-bold">
+          audi.
         </div>
         
         {/* Desktop Navigation */}

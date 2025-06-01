@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Github, Linkedin, Instagram, Twitter } from 'lucide-react';
+import myImage from "../../assets/pic4.jpeg";
+
 
 const Hero: React.FC = () => {
   const nameRef = useRef<HTMLHeadingElement>(null);
@@ -30,46 +32,51 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black  py-12 px-6 md:px-12">
       {/* Grid background */}
       <div className="absolute inset-0 z-0">
         <div className="grid-bg"></div>
       </div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          <div className="lg:w-7/12">
+          <div className="w-full sm:w-11/12 md:w-10/12 lg:w-7/12">
             <div>
               <h2 
                 ref={nameRef}
                 className="font-mono opacity-0 transform translate-y-8 transition-all duration-700 text-xl md:text-2xl text-white mb-4"
               >
-                hey, i'm
+                Hey, I'm
               </h2>
               <h1 
                 ref={titleRef}
-                className="font-mono opacity-0 transform translate-y-8 transition-all duration-700 delay-300 text-4xl sm:text-5xl md:text-7xl font-bold text-[#c2ff00] mb-6"
+                className="font-mono opacity-0 transform translate-y-8 transition-all duration-700 delay-300 text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+ font-bold text-[#c2ff00] mb-6"
               >
                 RADHIKA AUDICHYA
               </h1>
-              <h3 className="font-mono text-xl md:text-2xl text-[#ff44cc] mb-8">
+              <h3 className="font-mono text-lg sm:text-xl md:text-2xl
+ text-[#ff44cc] mb-8">
                 FRONT-END DEV AND SOFTWARE DEVELOPER
               </h3>
               <p 
                 ref={descriptionRef}
-                className="opacity-0 transform translate-y-8 transition-all duration-700 delay-600 text-[#4d4dff] text-lg md:text-xl max-w-2xl mb-12"
+                className="opacity-0 transform translate-y-8 transition-all duration-700 delay-600 text-[#5851db] text-base sm:text-lg md:text-xl max-w-2xl mb-12"
               >
-               I'm Radhika Audichya, a Front-End and Software Developer pursuing my B.Tech in Communication and Computer Engineering (CCE) at The LNM Institute of Information Technology (LNMIIT). I specialize in building dynamic web and mobile applications using React.js, React Native, Node.js, Express.js, and GenAI tools like Cursor and Bolt. I am also exploring the integration of AI into applications, working with LLM integrations to enhance user experiences.
+              I’m currently pursuing B.Tech in CCE at LNMIIT. I love crafting dynamic web and mobile apps using React.js, React Native, Node.js, and exploring GenAI tools like Cursor and Bolt to build smarter experiences with LLM integrations.
 
-Beyond coding, I led LNMHacks 7.0 as the Lead Organizer, was a Core Member at TEDxLNMIIT, and mentored students through the Counselling Cell. I am passionate about combining technology with creativity to solve real-world problems, foster community growth, and drive innovation.
+
+I’m driven by the blend of tech and creativity to solve real-world problems and build communities that grow together.
               </p>
               
               <div className="flex flex-wrap gap-6 mb-12">
                 <a 
-                  href="#projects" 
+                  href="https://drive.google.com/file/d/1iApJPFZxH_zNjzrap1jI-Y2fo771S_us/view?usp=sharing" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
                   className="bg-[#c2ff00] hover:bg-[#a9df00] text-black font-medium py-2 px-6 rounded transition-colors"
                 >
-                  View Projects
+                  View Resume
                 </a>
                 <a 
                   href="#contact" 
@@ -79,7 +86,7 @@ Beyond coding, I led LNMHacks 7.0 as the Lead Organizer, was a Core Member at TE
                 </a>
               </div>
               
-              <div className="flex space-x-8">
+              <div className="flex space-x-4 sm:space-x-6 md:space-x-8">
                 <a 
                   href="https://github.com/radhikaaudi" 
                   target="_blank" 
@@ -118,23 +125,26 @@ Beyond coding, I led LNMHacks 7.0 as the Lead Organizer, was a Core Member at TE
           
           <div 
             ref={imageRef}
-            className="lg:w-4/12 opacity-0 translate-y-8 transition-all duration-1000"
+            className="w-full sm:w-8/12 md:w-6/12 lg:w-4/12 mt-10 lg:mt-0 opacity-0 translate-y-8 transition-all duration-1000"
           >
-            {/* TV Frame Effect */}
-            <div className="relative">
-              {/* Outer Frame */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#4d4dff] via-[#ff44cc] to-[#c2ff00] rounded-2xl opacity-50 blur-lg animate-pulse"></div>
-              
-              {/* Inner Frame */}
-              <div className="relative bg-black rounded-xl p-3">
-                {/* Screen Frame */}
-                <div className="relative rounded-lg overflow-hidden bg-[#4d4dff]/10 backdrop-blur-sm">
-                  {/* Image Container */}
-                  <div className="aspect-[4/3] relative overflow-hidden rounded-lg">
+           {/* TV Frame Effect */}
+<div className="relative">
+  {/* Outer Frame */}
+  <div className="absolute -inset-3 bg-gradient-to-r from-[#4d4dff] via-[#ff44cc] to-[#4d4dff] rounded-xl opacity-40 blur-md animate-pulse"></div>
+
+  {/* Inner Frame */}
+  <div className="relative bg-black rounded-xl p-3">
+    {/* Screen Frame */}
+    <div className="relative rounded-lg overflow-hidden bg-[#4d4dff]/10 backdrop-blur-sm">
+      {/* Image Container */}
+      <div className="aspect-[3.9/3.5] relative overflow-hidden rounded-lg">
+        {/* Your content here */}
+      
+
                     <img 
-                      src="" 
-                      alt="Profile"
-                      className="w-full h-full object-cover mix-blend-luminosity"
+                      src={myImage}
+                      alt="Meri_image"
+                      className="w-full h-full object-cover contrast-110"
                     />
                     {/* Scan Line Animation */}
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#4d4dff]/10 to-transparent opacity-50 animate-scan"></div>

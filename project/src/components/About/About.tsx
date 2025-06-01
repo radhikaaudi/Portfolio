@@ -13,11 +13,7 @@ const About: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gray-900 border border-gray-800 rounded-lg p-8">
             <p className="text-[#4d4dff] text-lg mb-6">
-              I am a passionate Front-End developer with a knack for
-              solving complex challenges and crafting creative solutions.
-              I excel at quickly transforming designs into real-world Full
-              Stack projects using cutting-edge technologies and
-              frameworks.
+              I'm Radhika Audichya, a Front-End and Software Developer pursuing my B.Tech in Communication and Computer Engineering (CCE) at The LNM Institute of Information Technology (LNMIIT). I specialize in building dynamic web and mobile applications using React.js, React Native, Node.js, Express.js, and GenAI tools like Cursor and Bolt. 
             </p>
             
             <p className="text-[#4d4dff] text-lg mb-6">
@@ -28,14 +24,14 @@ const About: React.FC = () => {
               <p className="text-gray-300 italic">
                 "The magic you are looking for is in the work you are avoiding"
               </p>
-              <cite className="text-gray-400 text-sm">— Farrell Williams</cite>
+              <cite className="text-gray-400 text-sm">— Chris Williamson</cite>
             </blockquote>
             
             <div className="mt-8">
               <h3 className="text-xl font-mono text-[#c2ff00] mb-4">Education</h3>
               <div className="mb-4">
                 <h4 className="text-white font-medium">Bachelor's in Computer Science</h4>
-                <p className="text-gray-400">University Name | 2022 - 2026</p>
+                <p className="text-gray-400"> The LNM Institute of Information Technology | 2022 - 2026</p>
               </div>
             </div>
             
@@ -43,34 +39,23 @@ const About: React.FC = () => {
               <h3 className="text-xl font-mono text-[#c2ff00] mb-4">Experience</h3>
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-white font-medium">Senior Front-End Developer</h4>
-                  <p className="text-gray-400">Company Name | 2022 - Present</p>
+                  <h4 className="text-white font-medium">Contributor and Technical Researcher</h4>
+                  <p className="text-gray-400">REEF | 2023 </p>
                   <ul className="mt-2 space-y-1">
                     <li className="text-gray-300 flex items-start">
                       <span className="text-[#c2ff00] mr-2">•</span>
-                      Led the development of responsive web applications
+                      Completed impactful tasks that supported Reef’s growth strategy, improved internal processes, and contributed to the development of the Reef economy.
+
+
                     </li>
                     <li className="text-gray-300 flex items-start">
                       <span className="text-[#c2ff00] mr-2">•</span>
-                      Collaborated with designers to implement UI/UX designs
+                      Created detailed documentation to support ongoing projects and ensure technical clarity across the team.
                     </li>
                   </ul>
                 </div>
                 
-                <div>
-                  <h4 className="text-white font-medium">Web Developer</h4>
-                  <p className="text-gray-400">Previous Company | 2020 - 2022</p>
-                  <ul className="mt-2 space-y-1">
-                    <li className="text-gray-300 flex items-start">
-                      <span className="text-[#c2ff00] mr-2">•</span>
-                      Developed and maintained client websites
-                    </li>
-                    <li className="text-gray-300 flex items-start">
-                      <span className="text-[#c2ff00] mr-2">•</span>
-                      Implemented responsive designs and optimized performance
-                    </li>
-                  </ul>
-                </div>
+              
               </div>
             </div>
           </div>

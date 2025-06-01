@@ -15,10 +15,10 @@ const Footer: React.FC = () => {
                 href="mailto:you@example.com" 
                 className="flex items-center text-gray-300 hover:text-[#c2ff00] transition-colors"
               >
-                <Mail size={16} className="mr-2" /> you@example.com
+                <Mail size={16} className="mr-2" /> radhikaaudi11@gmail.com
               </a>
               <div className="flex items-center text-gray-300">
-                <MapPin size={16} className="mr-2" /> Location, Country
+                <MapPin size={16} className="mr-2" /> Jaipur, India
               </div>
             </div>
           </div>

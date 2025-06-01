@@ -121,26 +121,26 @@ const Contact: React.FC = () => {
               
               <div className="space-y-4 mb-8">
                 <a 
-                  href="mailto:you@example.com" 
+                  href="radhikaaudi11@gmail.com" 
                   className="flex items-center text-gray-300 hover:text-[#c2ff00] transition-colors"
                 >
-                  <Mail size={20} className="mr-3" /> you@example.com
+                  <Mail size={20} className="mr-3" /> radhikaaudi11@gmail.com
                 </a>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/radhikaaudi" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center text-gray-300 hover:text-[#c2ff00] transition-colors"
                 >
-                  <Github size={20} className="mr-3" /> github.com/username
+                  <Github size={20} className="mr-3" /> github.com/radhikaaudi
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/radhika-audichya-813295255/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center text-gray-300 hover:text-[#c2ff00] transition-colors"
                 >
-                  <Linkedin size={20} className="mr-3" /> linkedin.com/in/username
+                  <Linkedin size={20} className="mr-3" /> linkedin.com/in/Radhika
                 </a>
               </div>
             </div>
