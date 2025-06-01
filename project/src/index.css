@@ -21,16 +21,16 @@
   position: absolute;
   width: 200%;
   height: 200%;
-  top: -50%;
+  top: -52%;
   left: -50%;
-  background-image: linear-gradient(rgba(18, 18, 18, 0.9) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(18, 18, 18, 0.9) 1px, transparent 1px);
-  background-size: 30px 30px;
-  transform: perspective(1000px) rotateX(60deg);
+  background-image: linear-gradient(rgba(240, 232, 232, 0.8) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(237, 235, 235, 0.8) 1px, transparent 1px);
+  background-size: 35px 35px;
+  transform: perspective(1200px) rotateX(60deg);
   transform-origin: center;
   animation: grid-animation 20s linear infinite;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 @keyframes grid-animation {

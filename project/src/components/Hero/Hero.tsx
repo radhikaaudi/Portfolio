@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
               </h1>
               <h3 className="font-mono text-lg sm:text-xl md:text-2xl
  text-[#ff44cc] mb-8">
-                FRONT-END DEV AND SOFTWARE DEVELOPER
+                FULL STACK DEV AND SOFTWARE DEVELOPER
               </h3>
               <p 
                 ref={descriptionRef}
@@ -130,14 +130,14 @@ I’m driven by the blend of tech and creativity to solve real-world problems an
            {/* TV Frame Effect */}
 <div className="relative">
   {/* Outer Frame */}
-  <div className="absolute -inset-3 bg-gradient-to-r from-[#4d4dff] via-[#ff44cc] to-[#4d4dff] rounded-xl opacity-40 blur-md animate-pulse"></div>
+  <div className="absolute -inset-3 bg-gradient-to-r from-[#4d4dff] via-[#ff44cc] to-[#ff44cc] rounded-xl opacity-40 blur-md animate-pulse"></div>
 
   {/* Inner Frame */}
   <div className="relative bg-black rounded-xl p-3">
     {/* Screen Frame */}
     <div className="relative rounded-lg overflow-hidden bg-[#4d4dff]/10 backdrop-blur-sm">
       {/* Image Container */}
-      <div className="aspect-[3.9/3.5] relative overflow-hidden rounded-lg">
+      <div className="aspect-[4/3.5] relative overflow-hidden rounded-lg">
         {/* Your content here */}
       
 

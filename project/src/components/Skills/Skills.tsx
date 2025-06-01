@@ -9,34 +9,38 @@ const Skills: React.FC = () => {
     },
     {
       title: "Frontend",
-      skills: ["React", "React Native", "Next.js", "Tailwind CSS"]
+      skills: ["React", "React Native", "Next.js", "Tailwind CSS", "ShadCN"]
     },
     {
-      title: "Backend",
-      skills: ["Node.js", "Express", "MongoDB", "Firebase"]
+      title: "Backend and Database",
+      skills: ["Node.js", "Express.js", "MongoDB", "Firebase", "MySQL", "PostgreSQL" ,"RESTful APIs"]
     },
     {
       title: "DevOps & Deployment",
-      skills: ["Git", "Docker", "AWS", "Vercel"]
+      skills: ["Git", "Github","Docker", "AWS", "Vercel"]
     },
-    {
-      title: "Design Tools",
-      skills: ["Figma", "Adobe XD", "Photoshop", "Illustrator"]
-    },
+    
     {
       title: "Other Tools",
-      skills: ["VS Code", "Cursor", "Git", "Bolt"]
-    }
+      skills: ["VS Code", "Cursor", "Bolt", "Figma", "Photoshop", "Illustrator"]
+    },
+
+
+    {
+      title: "CS Fundamentals",
+      skills: ["OOPS", "DSA", "Computer Networks", "Operating Sytems"]
+    },
+
   ];
 
   return (
-    <section id="skills" className="py-20 bg-black relative overflow-hidden">
+    <section id="skills" className="py-60 bg-black relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-mono font-bold text-[#ff44cc] mb-4">
+          <h2 className="text-5xl md:text-4xl font-mono font-bold text-[#ff44cc] mb-4">
             Technical Skills
           </h2>
-          <p className="text-[#4d4dff] max-w-2xl mx-auto">
+          <p className="text-[#c2ff00] max-w-2xl mx-auto">
             A collection of technologies and tools I've worked with extensively.
           </p>
         </div>
